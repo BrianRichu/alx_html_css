@@ -3,6 +3,7 @@ body, main{
 }
 body{
   flex-direction: column;
+  background-color: rgb(200, 183, 183);
 }
 main{
   flex-direction: row;
@@ -15,4 +16,9 @@ article{
 aside{
   flex: 1;
   overflow-y: auto;
+  
+}
+aside p{
+  font-size: 20px;
+  font-weight: bold;
 }
