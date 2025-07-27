@@ -272,4 +272,36 @@ nav ul li a:hover{
   font-family: var(--main-font);
   font-weight: 600;
 }
+.FAQ{
+  width: 920px;
+  height: 707px;
+  margin-top: 20px;
+}
+.FAQ h2{
+font-family: var(--main-font);
+font-weight: 300;
+font-size: 60px;
+color: #071629;
+padding-bottom: 30px;
+}
+.one{
+  display: flex;
+  justify-content: space-between;
+}
 
+.FAQ-work{
+  text-align: left;
+  padding-left: 50px;
+}
+.FAQ-work h3{
+  padding-top: 30px;
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: #071629;
+}
+.paragraph{
+  font-family: var(--main-font);
+  font-weight: lighter;
+  color: #071629;
+  padding-top: 20px;
+}
