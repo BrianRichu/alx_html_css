@@ -76,8 +76,8 @@ nav ul li a:hover{
   background-color: #c271FF;
   border: none;
   border-radius: 30px;
-  padding: 10px 17px;
-  font-size: 10px;
+  padding: 15px 35px;
+  font-size: 12px;
   margin-top: 20px;
   position: relative;
 }
@@ -91,6 +91,7 @@ nav ul li a:hover{
   font-family: var(--main-font);
   position: absolute;
   left: 42%;
+  padding-top: 50px;
   }
   .pros h2 span{
     color:#c271FF;
@@ -99,7 +100,7 @@ nav ul li a:hover{
     width: 80%;
     display: flex;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     margin: 10px;
     
   }
@@ -227,5 +228,48 @@ nav ul li a:hover{
   font-family: var(--main-font);
   font-weight: 600;
 }
-
+.membership{
+  background-color: #071629;
+  width: 100%;
+  height: 400px;
+  margin-top: 70px;
+}
+.membership h2{
+  color: white;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 32px;
+}
+.membership span{
+  color: #C271FF;
+}
+.membership-section{
+  display: inline-block;
+}
+.membership-section img{
+  text-align: center;
+  padding-left: 20px;
+}
+.membership-section h3{
+  color: white;
+  padding-left: 100px;
+  
+}
+.membership-section p{
+  color: white;
+  width: 200px;
+  padding-left: 70px;
+}
+.membership button{
+  text-decoration: none;
+  color: white;
+  background-color: #c271FF;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 40px;
+  font-size: 14px;
+  margin-top: 40px;
+  font-family: var(--main-font);
+  font-weight: 600;
+}
 
