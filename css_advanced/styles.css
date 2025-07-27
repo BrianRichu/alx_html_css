@@ -305,3 +305,43 @@ padding-bottom: 30px;
   color: #071629;
   padding-top: 20px;
 }
+.section-footer{
+  background-color: #071629;
+  width: 100%;
+  height: 150px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+.footer img{
+  margin-top: 50px ;
+  margin-left: 150px;
+}
+.socials{
+  color: white;
+  margin-top :50px;
+  margin-left: 50px;
+ 
+}
+.fa-brands{
+  width: 40px;
+  height: 40px;
+}
+.copyright{
+  text-align: center;
+  color: rgb(158, 150, 150);
+  padding-top: 20px;
+  font-family: var(--main-font);
+  font-size: 12px;
+}
+.footer p{
+  text-align: left;
+  margin-right: 538px;
+  margin-top: 36px;
+  color: white;
+  font-family: var(--main-font);
+  font-size: 12px;
+}
