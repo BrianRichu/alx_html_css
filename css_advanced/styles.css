@@ -20,8 +20,14 @@ nav{
   align-items: center;
 }
 nav img{
-  width: 60px;
-  border-radius: 50%;
+  width: 35px;
+}
+nav p{
+  color: white;
+  font-family: var(--main-font);
+  padding-left: 10px;
+  font-size: 10px;
+  font-weight: 400;
 }
 nav ul{
   flex: 1;
@@ -67,7 +73,7 @@ nav ul li a:hover{
   display: inline-block;
   text-decoration: none;
   color: white;
-  background-color: rgb(160, 41, 160);
+  background-color: #c271FF;
   border: none;
   border-radius: 30px;
   padding: 10px 17px;
@@ -87,7 +93,7 @@ nav ul li a:hover{
   left: 42%;
   }
   .pros h2 span{
-    color: rgb(160, 41, 160);
+    color:#c271FF;
   }
   .the-pros{
     width: 80%;
@@ -119,7 +125,7 @@ nav ul li a:hover{
   .section-2{
     width: 100%;
     height: 300px;
-    background-color: rgb(230, 111, 230);
+    background-color: #C271FF;
     display: flex;
     align-items: center;
     
@@ -144,6 +150,82 @@ nav ul li a:hover{
 .section-2 p{
   font-style: italic;
 }
-
+.tutorials{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+.tutorials h2{
+  font-weight: lighter;
+  font-family: var(--main-font);
+}
+.tutorials span{
+  color: #c271FF;
+  font-weight: 700;
+}
+.tutorials-section{
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+.tutorials-section h3{
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #071629;
+}
+.tutorials-section p{
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 200;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.tutorials-section-img{
+  display: flex;
+}
+.tutorials-section-img img{
+  width: 30px;
+  height: 30px;
+  padding-top: 20px;
+  padding-left: 22px;
+}
+.tutorials-section-img h4{
+  font-size: 10px;
+  padding-top: 26px;
+  padding-left: 12px;
+  color: #c271FF;
+}
+.tutorials-rating{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.ratings{
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 20px;
+  letter-spacing: 2px;
+  font-size: 10px; 
+  color:#c271FF;
+  
+}
+.last-rating{
+  color: grey;
+}
+.tutorials-rating p{
+  color: #C271FF;
+  font-family: var(--main-font);
+  font-weight: 600;
+}
 
 
