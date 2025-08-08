@@ -63,4 +63,4 @@ To view the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/BrianRichu/alx_html_css/tree/main/headphones.git
+   git clone https://github.com/BrianRichu/alx_html_css.git
