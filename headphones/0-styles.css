@@ -1,0 +1,185 @@
+:root{
+  --main-font:'Source Sans Pro', sans-serif;
+  --primary-color: #FF6565;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.header-container{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/headphones_hero_1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navBar{
+  width: 87%;
+  height: 100px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  width: 150px;
+}
+.nav-link ul{
+   flex: 1;
+}
+.nav-link ul li{
+  display: inline-block;
+  margin: 5px;
+  list-style: none;
+}
+.nav-link ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: var(--main-font);
+  cursor: pointer;
+  font-size: 13px;
+}
+.nav-link ul li a:hover{
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+/* Hide menu toggle by default (desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+/* Default styles */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+  }
+  .logo{
+    width: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  .menu-toggle i {
+  font-size: 24px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+
+  .logo {
+    margin: 30px auto 10px;
+    display: block;
+    height: 200px;
+  }
+
+  .nav-link {
+    display: none;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .nav-link ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-link ul li {
+    list-style: none;
+    padding-top: 30px;
+  }
+
+  .nav-link ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--main-font);
+  
+  }
+
+  .nav-link.active {
+    display: block;
+  }
+
+  .menu-open #header-info {
+    display: none;
+  }
+
+  .header-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navBar {
+    position: relative;
+    z-index: 10;
+  }
+
+
+}
+
+.header-info{
+  width: 55%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.header-info h1{
+  color: #FFF;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+.header-info h2{
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.action{
+  margin-top: 37px;
+  padding: 20px 30px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  border: none;
+  color: #FFF;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+
+.header-info p{
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  color: #FFF;
+  font-family: var(--main-font);
+  font-weight: lighter;
+  line-height: 1.5;
+  font-size: 15px;
+
+}
