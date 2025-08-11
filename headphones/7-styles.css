@@ -1,0 +1,22 @@
+.inside-content2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.result-card:hover .pentagon,
+.result-card:focus-within .pentagon{
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
+
+/* ---- Continuous Animation (gentle floating effect) ---- */
+.fun-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+

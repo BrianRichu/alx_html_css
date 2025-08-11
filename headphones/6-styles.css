@@ -92,12 +92,6 @@
   font-weight: 300;
 }
 
-/* hover/tap effect */
-.result-card:hover .pentagon,
-.result-card:focus-within .pentagon{
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
-}
 
 /* ACCESSIBILITY: make pentagons keyboard-focusable if needed */
 .pentagon:focus{

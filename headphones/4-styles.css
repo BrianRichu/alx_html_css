@@ -46,10 +46,6 @@ footer {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.footer-right a:hover {
-    background-color: #ff4b5c;
-    color: white;
-}
 
 footer p {
     margin-top: 15px;
