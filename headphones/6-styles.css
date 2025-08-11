@@ -1,0 +1,127 @@
+:root{
+  --primary-color: #FF6565;
+  --bg-color: #071427;
+  --fg: #ffffff;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* SECTION LAYOUT */
+.our-results{
+  background: linear-gradient(180deg, rgba(0,0,0,0.22), rgba(0,0,0,0.22)),url(/images/headphones_hero_2.jpg); 
+  padding: 64px 20px;
+  color: var(--fg);
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+.results-content{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.results-content h2{
+  font-size: clamp(20px, 3vw, 28px);
+  margin-bottom: 12px;
+  color: var(--fg);
+}
+
+.results-content p{
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 760px;
+  margin: 0 auto 36px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.85);
+}
+
+/* GRID */
+.results-grid{
+  display: flex;
+  gap: clamp(18px, 3vw, 48px);
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.result-card{
+  width: clamp(110px, 18vw, 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PURE-CSS PENTAGON */
+.pentagon{
+  width: 100%;
+  aspect-ratio: 1 / 1;            /* keep a square container */
+  max-width: 200px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  position: relative;
+  color: var(--fg);
+  transition: transform .28s ease, box-shadow .28s ease;
+  /* create the pentagon with clip-path (5-point polygon) */
+  background: linear-gradient(180deg, var(--primary-color), #ff4a54);
+  clip-path: polygon(
+    50% 0%,
+    93% 35%,
+    76% 92%,
+    24% 92%,
+    7% 35%
+  );
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* number inside the pentagon */
+.pentagon .number{
+  font-size: clamp(18px, 3.5vw, 28px);
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-4%); /* slightly lift visually */
+}
+
+/* caption under pentagon */
+.caption{
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
+  text-align:center;
+  font-weight: 300;
+}
+
+/* hover/tap effect */
+.result-card:hover .pentagon,
+.result-card:focus-within .pentagon{
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
+
+/* ACCESSIBILITY: make pentagons keyboard-focusable if needed */
+.pentagon:focus{
+  outline: 3px solid rgba(255,255,255,0.12);
+  outline-offset: 6px;
+}
+
+/* RESPONSIVE: stack on small screens */
+@media (max-width: 768px){
+  .our-results{
+    background-position: center;
+    background-size: cover;
+  }
+  .results-grid{
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .result-card{
+    width: clamp(170px, 60vw, 280px);
+  }
+
+  .caption{
+    font-size: 14px;
+  }
+}
