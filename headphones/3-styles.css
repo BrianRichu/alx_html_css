@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #ff5b5b;
+  --font-color: #0f1b2b;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  background: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--font-color);
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  font-size: 14px;
+  background: transparent;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.cta-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #e14a4a;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .contact-container h2 {
+    font-size: 22px;
+  }
+}
